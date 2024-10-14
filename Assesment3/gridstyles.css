@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#clothing">Clothing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Clothing Store</h1>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing high-quality clothing for everyone.</p>
+        </section>
+
+        <section id="clothing">
+            <h2>Clothing Collection</h2>
+            <div class="grid-container">
+                <div class="grid-item"><img src="clothing1.jpg" alt="Clothing 1"></div>
+                <div class="grid-item"><img src="clothing2.jpg" alt="Clothing 2"></div>
+                <div class="grid-item"><img src="clothing3.jpg" alt="Clothing 3"></div>
+                <div class="grid-item"><img src="clothing4.jpg" alt="Clothing 4"></div>
+                <div class="grid-item"><img src="clothing5.jpg" alt="Clothing 5"></div>
+                <div class="grid-item"><img src="clothing6.jpg" alt="Clothing 6"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clothing Store</p>
+    </footer>
+</body>
+</html>
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
